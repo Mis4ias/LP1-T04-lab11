@@ -4,7 +4,7 @@
 #include <algorithm> 
 #include <vector>
 #include <ctype.h>
-
+#include <iostream>
 using namespace std;
 
 bool palindromo (string palavra) {
@@ -16,18 +16,15 @@ bool palindromo (string palavra) {
 
 //Pecorre na string trocando seus elementos    
     for (string::iterator i = palavra.begin(), j = palavra.end()-1; i !=j ; i++,j--){
-            swap (*i, *j);
-    }
-//Compara as duas strings
-            if (palavra.compare(str) != 0){
-    
+//Compara
+            if (*i != *j){
                 return false;
-                }
-            else {
+            }else{
+                cout<<palavra<<endl;
                 return true;
-        }
+            }
+    }
 }
-
 //Função de troca
 void swap (string &a, string &b){
 
