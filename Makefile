@@ -9,8 +9,8 @@ CC = g++
 CFLAGS = -O3 -Wall -std=c++11 -pedantic -I $(INCLUDEDIR)
 LDFLAGS =
 
-BIN = ${BINDIR}/lab01
-APP = ${APPDIR}/lab01.cpp
+BIN = ${BINDIR}/lab11
+APP = ${APPDIR}/lab11.cpp
 
 SRC = $(wildcard $(SRCDIR)/*.cpp)
 OBJS = $(patsubst $(SRCDIR)/%.cpp,$(OBJDIR)/%.o,$(SRC))
